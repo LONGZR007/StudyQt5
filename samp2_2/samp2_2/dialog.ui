@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>716</width>
-    <height>414</height>
+    <width>867</width>
+    <height>436</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -98,16 +98,16 @@ p, li { white-space: pre-wrap; }
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="btnClose">
+      <widget class="QPushButton" name="btnOK">
        <property name="text">
-        <string>退出</string>
+        <string>确定</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="btnOK">
+      <widget class="QPushButton" name="btnCancel">
        <property name="text">
-        <string>确定</string>
+        <string>取消</string>
        </property>
       </widget>
      </item>
@@ -125,9 +125,9 @@ p, li { white-space: pre-wrap; }
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="btnCancel">
+      <widget class="QPushButton" name="btnClose">
        <property name="text">
-        <string>取消</string>
+        <string>退出</string>
        </property>
       </widget>
      </item>
@@ -143,10 +143,57 @@ p, li { white-space: pre-wrap; }
   <tabstop>radioRed</tabstop>
   <tabstop>radioBlue</tabstop>
   <tabstop>textEdit</tabstop>
-  <tabstop>btnClose</tabstop>
   <tabstop>btnOK</tabstop>
-  <tabstop>btnCancel</tabstop>
  </tabstops>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnOK</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>507</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>556</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>814</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>757</x>
+     <y>537</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
