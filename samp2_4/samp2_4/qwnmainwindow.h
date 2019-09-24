@@ -28,5 +28,15 @@ private:
     QSpinBox *spinFontSize;         // 字体大小 spinBox
     QFontComboBox *comboFont;       // 字体名称
     void iniUI();
+    void iniSignalSlots();
+private slots:
+    void on_actBold_triggered(bool checked);  //粗体Action
+    void on_actItalic_triggered(bool checked); //斜体Action
+    void on_actUnder_triggered(bool checked);   //下划线Action
+    void on_textEdit_copyAvailable(bool b);
+    void on_textEdit_selectionChanged();
+
+    void on_spinBoxFontSize_valueChanged(int aFontSize);
+    void on_comboFont_currentIndexChanged(const QString &argl);
 };
 #endif // QWNMAINWINDOW_H

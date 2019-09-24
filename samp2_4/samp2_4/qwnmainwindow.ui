@@ -26,7 +26,7 @@
      <x>0</x>
      <y>0</y>
      <width>1165</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -170,6 +170,9 @@
    </property>
   </action>
   <action name="actBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="res.qrc">
      <normaloff>:/images/images/BLD.BMP</normaloff>:/images/images/BLD.BMP</iconset>
@@ -179,6 +182,9 @@
    </property>
   </action>
   <action name="actItalic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="res.qrc">
      <normaloff>:/images/images/ITL.BMP</normaloff>:/images/images/ITL.BMP</iconset>
@@ -188,6 +194,9 @@
    </property>
   </action>
   <action name="actUnder">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="res.qrc">
      <normaloff>:/images/images/WORDUNDR.BMP</normaloff>:/images/images/WORDUNDR.BMP</iconset>
